@@ -1,5 +1,5 @@
 homepage: "https://permate.com"
-documentation: "https://github.com/PmHubDev/qa-pixel-google-tag-manager-template"
+documentation: "https://github.com/permate-tech/permate-conversion-tag-template-gtm"
 versions:
-  - sha: 5982aed2c6492216c3be4eff058235662e5ad33f
+  - sha: d112c64e51f2b34b424e564720e2325d4e592329
     changeNotes: Initial release.

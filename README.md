@@ -15,7 +15,7 @@ Sự kiện chuyển đổi của Permate được ghi nhận khi Conversion tag
 <ol>
   <li>Đăng nhập vào tài khoản Google Tag Manager của bạn, chọn Account/Container tương ứng, chọn vào <b>Templates/Mẫu</b> sau đó chọn <b>New/Mới</b>.</li>
   <li>Click chọn vào dấu 3 chấm trên cùng bên phải, sau đó chọn <b>Import/Nhập</b>.</li>
-  <li>Bạn cần tải về file <a href="https://github.com/PmHubDev/qa-pixel-google-tag-manager-template/blob/main/template.tpl"><b>template.tpl</b></a> sau đó nhập vào Template/Mẫu.</li>
+  <li>Bạn cần tải về file <a href="https://github.com/permate-tech/permate-conversion-tag-template-gtm/blob/main/template.tpl"><b>template.tpl</b></a> sau đó nhập vào Template/Mẫu.</li>
   <li>Chọn Save/Lưu</li>
 
   ![GTM_Permate_Import_ConversionTag](https://github.com/user-attachments/assets/acef213d-79e6-4cda-a08d-5e1ffdda999d)
