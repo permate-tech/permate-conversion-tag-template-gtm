@@ -1,0 +1,5 @@
+homepage: "https://permate.com"
+documentation: "https://github.com/PmHubDev/qa-pixel-google-tag-manager-template"
+versions:
+  - sha: 5982aed2c6492216c3be4eff058235662e5ad33f
+    changeNotes: Initial release.
