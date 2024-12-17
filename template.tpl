@@ -54,7 +54,7 @@ const getType = require('getType');
 const Object = require('Object');
 const JSON = require('JSON');
 
-const TRACKING_DOMAIN = 'https://pmcloud1.com';
+const TRACKING_DOMAIN = 'https://bk.pmcloud1.com';
 
 function processData() {
   let params = data.params;
