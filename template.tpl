@@ -56,6 +56,16 @@ const JSON = require('JSON');
 
 const TRACKING_DOMAIN = 'https://bk.pmcloud1.com';
 
+function getParams(params) {
+  let encodeParams = [];
+  const listParams = params.split('&');
+  for (let item of listParams) {
+    let itemParams = item.split('=');
+    encodeParams.push(itemParams[0] + '=' + encodeUriComponent(itemParams[1]));
+  }
+  return encodeParams.join('&');
+}
+
 function processData() {
   let params = data.params;
   if (!TRACKING_DOMAIN) {
@@ -66,7 +76,7 @@ function processData() {
     log('params is undefined');
     return;
   }
-  let pbUrl = TRACKING_DOMAIN + '/postback/browser?' + params;
+  let pbUrl = TRACKING_DOMAIN + '/postback/browser?' + getParams(params);
   let pmClick = getCookieValues('pm_click')[0];
   if (!pmClick) {
     log('pm_click is undefined');
