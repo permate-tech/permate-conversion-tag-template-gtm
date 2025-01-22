@@ -1,5 +1,9 @@
 homepage: "https://permate.com"
 documentation: "https://github.com/permate-tech/permate-conversion-tag-template-gtm"
 versions:
+  # Latest version 
+  - sha: 09787866899efaac3b2cd8121951d32f38a87eaf
+    changeNotes: Add decodeUriComponent
+  # Older versions
   - sha: d112c64e51f2b34b424e564720e2325d4e592329
     changeNotes: Initial release.
