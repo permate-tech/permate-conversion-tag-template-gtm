@@ -61,7 +61,7 @@ function getParams(params) {
   const listParams = params.split('&');
   for (let item of listParams) {
     let itemParams = item.split('=');
-    encodeParams.push(itemParams[0] + '=' + encodeUriComponent(itemParams[1]));
+    encodeParams.push(encodeUriComponent(itemParams[0]) + '=' + encodeUriComponent(itemParams[1]));
   }
   return encodeParams.join('&');
 }
@@ -83,12 +83,12 @@ function processData() {
     return;
   }
   let jsonPMClick = JSON.parse(pmClick);
-  pbUrl += '&origin=' + encodeUriComponent(getUrl('origin')) + '&click_uuid=' + jsonPMClick.click;
+  pbUrl += '&origin=' + encodeUriComponent(getUrl('origin')) + '&click_uuid=' + encodeUriComponent(jsonPMClick.click);
   callInWindow('pmCallbackUrl');
   let pmVariable = copyFromWindow('pmVariable');
   if (pmVariable && getType(pmVariable) == 'object') {
     Object.keys(pmVariable).forEach(key => {
-      pbUrl += '&' + key + '=' + encodeUriComponent(pmVariable[key]);
+      pbUrl += '&' + encodeUriComponent(key) + '=' + encodeUriComponent(pmVariable[key]);
     });
   }
   sendPixel(pbUrl);
